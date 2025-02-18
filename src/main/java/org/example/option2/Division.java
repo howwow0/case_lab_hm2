@@ -8,7 +8,7 @@ class Division extends Operation {
     @Override
     public double calculate() {
         if (b == 0) {
-            throw new ArithmeticException("Деление на ноль невозможно");
+            return 0;
         }
         return a / b;
     }

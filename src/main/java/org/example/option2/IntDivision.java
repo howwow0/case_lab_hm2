@@ -8,7 +8,7 @@ class IntDivision extends Operation {
     @Override
     public double calculate() {
         if (b == 0) {
-            throw new ArithmeticException("Целочисленное деление на ноль невозможно");
+            return 0;
         }
         return (int) a / (int) b;
     }
